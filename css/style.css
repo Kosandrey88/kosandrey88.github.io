@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f9f9f9;
+    color: #000;
+    text-align: left;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: url('../images/header-bg.jpg') top center no-repeat;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    padding: 135px 20px 90px 20px;
+}
+
+header h1 {
+    font-size: 3.75em;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+}
+
+header h3 {
+    font-size: 1.125em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+header p {
+    font-size: 0.75em;
+}
+
+/*Стили для ввода */
+.subscribe {
+    background: rgba(0, 0, 0, 0.65);
+    display: table;
+    padding: 20px;
+    margin: 0 auto 10px auto;
+    border-radius: 5px; /*закругляет углы*/
+}
+
+.subscribe input {
+    float: left;
+}
+
+.subscribe input[type="text"], .subscribe input[type="email"] {
+    padding: 0;
+    border: none;
+    width: 320px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 12px 20px 13px 20px;
+    box-sizing: border-box;
+}
+
+/* Стиль для кнопки*/
+.subscribe input[type="submit"] {
+    color: white;
+    background: #c328ff;
+    border: none;
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+article h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+article p {
+    margin-bottom: 30px;
+}
+
+.imgleft {
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
+@media screen and (max-width: 940px) {
+    .subscribe input[type="text"], .subscribe input[type="email"] /*адаптация страници*/
+    {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    /*адаптация страници*/
+    .subscribe input[type="text"], .subscribe input[type="email"] {
+        width: 320px;
+        display: block;                                                  /*адаптация страници*/
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width: 400px) {
+        .subscribe input[type="text"], .subscribe input[type="email"]               /*адаптация страници*/
+        {
+            width: 240px;
+        }
+    }
+
+    header {
+        padding: 30px 20px; /*адаптация страници*/
+    }
+
+    header h1 {
+        font-size: 2.75em;   /*адаптация страници*/
+        margin-bottom: 20px;
+    }
+
+    header h3 {                 /*адаптация страници*/
+        margin-bottom: 25px;
+    }
+
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+* html .group {
+    zoom: 1;
+}
+
+*:first-child + html .group {
+    zoom: 1;
+}
